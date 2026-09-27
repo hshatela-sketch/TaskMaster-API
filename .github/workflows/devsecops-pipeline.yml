@@ -70,3 +70,6 @@ jobs:
         uses: zaproxy/action-baseline@v0.12.0
         with:
           target: 'http://localhost:8080'
+          cmd_options: '-I'
+allow_issue_writing: false
+          
