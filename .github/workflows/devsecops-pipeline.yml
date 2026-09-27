@@ -56,7 +56,7 @@ jobs:
       - name: Build and start application
         run: docker compose up -d --build
 
-      - name: Wait for application
+       - name: Wait for application
         run: |
           for i in {1..30}; do
             if curl -fsS http://localhost:8080/; then
@@ -71,5 +71,4 @@ jobs:
         with:
           target: 'http://localhost:8080'
           cmd_options: '-I'
-allow_issue_writing: false
-          
+          allow_issue_writing: false
