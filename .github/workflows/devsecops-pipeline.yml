@@ -1,5 +1,9 @@
 name: DevSecOps Security Delivery Gate
 
+permissions:
+  contents: read
+  issues: write
+
 on:
   push:
     branches: [main]
