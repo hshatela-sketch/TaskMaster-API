@@ -1,0 +1,5 @@
+services:
+  taskmaster-api:
+    build: .
+    ports:
+      - "8080:8080"
